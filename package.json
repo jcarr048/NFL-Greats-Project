@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jcarr048/NFL-Greats-Project#readme",
   "dependencies": {
     "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
