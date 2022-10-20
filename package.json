@@ -1,0 +1,23 @@
+{
+  "name": "nfl-greats-project",
+  "version": "1.0.0",
+  "description": "## Date 10/20/2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcarr048/NFL-Greats-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcarr048/NFL-Greats-Project/issues"
+  },
+  "homepage": "https://github.com/jcarr048/NFL-Greats-Project#readme",
+  "dependencies": {
+    "mongoose": "^6.6.5"
+  }
+}
