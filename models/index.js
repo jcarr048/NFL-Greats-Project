@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const PlayerSchema = require('./player')
+const PlayerSchema = require('./players')
 const TeamSchema = require('./teams')
 
 const Player = mongoose.model('Player', PlayerSchema)
