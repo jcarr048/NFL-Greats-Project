@@ -1,13 +1,14 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const { Schema } = require('mongoose')
 
-const Teams = new Schema({
-  teamName: { type: String, required: true },
-  yearStarted: { type: String, required: true },
-  superBowls: { type: Number, required: true },
-  division: { type: String, required: true },
-  previousNames: { type: String, required: false },
-  about: { type: String, required: true }
-})
+const Teams = new Schema(
+  {
+    logo: { type: String, required: true },
+    name: { type: String, required: true },
+    yearFounded: { type: String, required: true },
+    superBowls: { type: Number, required: true },
+    bestPlayer: { type: Schema.Players.objectId, required: true }
+  },
+  { timestamps: true }
+)
 
-module.exports = mongoose.model('Team', Teams)
+module.exports = Teams

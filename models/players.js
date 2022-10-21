@@ -1,5 +1,4 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const { Schema } = require('mongoose')
 
 const Players = new Schema(
   {
@@ -9,10 +8,12 @@ const Players = new Schema(
     position: { type: String, required: true },
     yearsPlayed: { type: String, required: true },
     college: { type: String, required: true },
-    awards: { type: Array, required: true },
+    proBowls: { type: String, required: true },
+    superBowls: { type: String, required: true },
+    mVP: { type: String, required: true },
     proFootballRef: { type: String, required: true }
   },
   { timestamps: true }
 )
 
-module.exports = mongoose.model('Player', Players)
+module.exports = Players
