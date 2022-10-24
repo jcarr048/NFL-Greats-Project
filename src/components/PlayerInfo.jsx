@@ -7,7 +7,7 @@ const PlayerInfo = ({onClick, image, name, team}) => {
             </div>
             <div className="player-tab">
                 <h2>{name}</h2>
-                <h3>{team}</h3>
+                <h4>{team}</h4>
             </div>
         </div>
     )
