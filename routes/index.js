@@ -14,4 +14,10 @@ router.get('/teams', controllers.getAllTeams)
 
 router.get('/teams/:id', controllers.getTeamById)
 
+router.put('/players/:id', controllers.updatePlayer)
+
+router.put('/teams/:id', controllers.updateTeam)
+
+router.delete('/players/:id', controllers.deletePlayer)
+
 module.exports = router
