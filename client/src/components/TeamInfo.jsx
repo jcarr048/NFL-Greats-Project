@@ -1,6 +1,6 @@
 const TeamInfo = ({image, name, division}) => {
     return (
-        <div className="team-choice" onClick={onClick}>
+        <div className="team-choice">
             <div className="img-wrapper">
                 <img src={image} alt={name}></img>
             </div>
