@@ -12,3 +12,17 @@ body {
   grid-gap: 1em;
   justify-content: center;
 }
+
+header {
+  background-color: rgba(254, 121, 104);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  margin: 10px;
+  font-weight: 200;
+}
+
+header nav a {
+  margin: 0 4em;
+}
