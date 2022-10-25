@@ -4,19 +4,18 @@ import TeamInfo from '../../../client/src/components/TeamInfo'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-  // const [teams, setTeams] = useState([])
+  const [teams, setTeams] = useState([])
 
-  // const getTeams = async () => {
-  //   const response = await axios.get(`http://localhost:3001/api/teams`)
-  //   setTeams(response.data.results)
-  // }
-  // useEffect(() => {
-  //   getTeams()
-  // })
+  const getTeams = async () => {
+    const response = await axios.get(`http://localhost:3001/api/teams`)
+    setTeams(response.data.results)
+  }
+  useEffect(() => {
+    getTeams()
+  })
   return (
     <div>
-      Hello
-      {/* <div className="teams">
+      <div className="teams">
         <h2>Teams</h2>
         <section className="container-grid">
           {teams.map((result) => (
@@ -29,7 +28,7 @@ const Home = () => {
             </Link>
           ))}
         </section>
-      </div> */}
+      </div>
     </div>
   )
 }
