@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function CreateNewPlayer() {
   const initialState = {
@@ -26,7 +27,7 @@ function CreateNewPlayer() {
   return (
     <div className="new-player">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="image">Image:</label>
+        <label htmlFor="image">Image Link:</label>
         <input
           id="image"
           type="link"
@@ -91,7 +92,9 @@ function CreateNewPlayer() {
           value={formState.mVP}
           required
         />
+        <button type="submit">Create New Player</button>
       </form>
+      <Link to="/playerpage">Click here to check out your player!</Link>
     </div>
   )
 }

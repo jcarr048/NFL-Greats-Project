@@ -17,3 +17,7 @@
 //     bestPlayer: '',
 //     teamWebsite: ''
 // }
+
+{
+  /* <Link to="/createplayer">Create New Player</Link> */
+}

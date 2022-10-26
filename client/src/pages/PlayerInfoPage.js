@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useParams, useNavigate, Link } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 const PlayerInfoPage = () => {
   const [playerDetails, setPlayerDetails] = useState(null)
@@ -18,6 +18,12 @@ const PlayerInfoPage = () => {
 
   const pageChange = () => {
     navigate('/createplayer')
+  }
+
+  const deleteThisPlayer = async () => {
+    const response = await axios.delete(
+      `http://localhost:3001/api/delete/players/${playerId}`
+    )
   }
 
   return (
@@ -39,7 +45,11 @@ const PlayerInfoPage = () => {
           <p>MVPs: {playerDetails?.mVP}</p>
         </div>
         <button onClick={pageChange}>Create New Player</button>
-        <Link to="/createplayer">Create New Player</Link>
+        <button onClick={deleteThisPlayer}>Delete this player</button>
+        <h3>
+          Disagree with this player? Have someone else in mind? Click the
+          buttons above to delete the player, then create a new one.
+        </h3>
       </section>
     </div>
   )
