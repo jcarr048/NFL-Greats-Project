@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose')
 const Player = new Schema(
   {
     image: { type: String, required: true },
-    team_id: { type: Schema.Types.ObjectId, ref: 'team_id' },
+    team_id: { type: String, required: true },
     name: { type: String, required: true },
     position: { type: String, required: true },
     yearsPlayed: { type: String, required: true },

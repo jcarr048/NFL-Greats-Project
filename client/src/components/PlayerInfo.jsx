@@ -1,4 +1,4 @@
-const PlayerInfo = ({onClick, image, name, team_id}) => {
+const PlayerInfo = ({onClick, image, name}) => {
 
     return(
         <div className="player card" onClick={onClick}>
@@ -7,7 +7,6 @@ const PlayerInfo = ({onClick, image, name, team_id}) => {
             </div>
             <div className="player-tab">
                 <h2>{name}</h2>
-                <h4>{team_id}</h4>
             </div>
         </div>
     )

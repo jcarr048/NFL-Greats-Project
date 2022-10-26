@@ -37,6 +37,7 @@ const PlayerInfoPage = () => {
         <div className="flex-row space"></div>
         <div>
           <h3>Name: {playerDetails?.name}</h3>
+          <p>Team: {playerDetails?.team_id}</p>
           <p>Position: {playerDetails?.position}</p>
           <p>Years Played: {playerDetails?.yearsPlayed}</p>
           <p>College: {playerDetails?.college}</p>

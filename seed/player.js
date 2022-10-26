@@ -13,7 +13,7 @@ const main = async () => {
     {
       image:
         'https://www.pro-football-reference.com/req/20180910/images/headshots/BreeDr00_2020.jpg',
-      team_id: saints[0]._id,
+      team_id: 'New Orleans Saints',
       name: 'Drew Brees',
       position: 'Quarterback',
       yearsPlayed: '2008-2020',
@@ -27,7 +27,7 @@ const main = async () => {
     {
       image:
         'https://www.pro-football-reference.com/req/20180910/images/headshots/BrooDe00_2019.jpg',
-      team_id: buccaneers[0]._id,
+      team_id: 'Tampa Bay Buccaneers',
       name: 'Derrick Brooks',
       position: 'Linebacker',
       yearsPlayed: '1995 - 2008',
@@ -41,7 +41,7 @@ const main = async () => {
     {
       image:
         'https://www.pro-football-reference.com/req/20180910/images/headshots/RyanMa00_2022.jpg',
-      team_id: falcons[0]._id,
+      team_id: 'Atlanta Falcons',
       name: 'Matt Ryan',
       position: 'Quarterback',
       yearsPlayed: '2008-Present',
@@ -55,7 +55,7 @@ const main = async () => {
     {
       image:
         'https://www.pro-football-reference.com/req/20180910/images/headshots/NewtCa00_2021.jpg',
-      team_id: panthers[0]._id,
+      team_id: 'Carolina Panthers',
       name: 'Cam Newton',
       position: 'Quarterback',
       yearsPlayed: '2011 - 2021',

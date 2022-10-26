@@ -15,9 +15,9 @@ function CreateNewPlayer() {
   }
   const [formState, setFormState] = useState(initialState)
 
-  const handleSubmit = (evt) => {
-    evt.preventDefault()
-    axios.post('http://localhost:3001players/new', formState)
+  const handleSubmit = () => {
+    axios.post('http://localhost:3001/api/players/new', formState)
+    setFormState(initialState)
   }
 
   const handleChange = (evt) => {
