@@ -22,7 +22,7 @@ const Home = () => {
         <h2>Teams</h2>
         <section className="container-grid">
           {teams?.map((result) => (
-            <Link to={`/view/${result.id}`} key={result.id}>
+            <Link to={`/view/${result._id}`} key={result._id}>
               <TeamInfo
                 logo={result.logo}
                 name={result.name}

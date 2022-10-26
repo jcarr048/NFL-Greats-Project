@@ -1,4 +1,4 @@
-const TeamInfo = ({logo, name, division}) => {
+const TeamInfo = ({logo, name}) => {
         return (
             <div className="team-choice">
                 <div className="img-wrapper">
@@ -6,7 +6,6 @@ const TeamInfo = ({logo, name, division}) => {
                 </div>
                 <div className="team-tab">
                     <h3>{name}</h3>
-                    <h4>{division}</h4>
                 </div>
             </div>
         )
