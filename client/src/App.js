@@ -4,6 +4,7 @@ import About from './pages/About'
 import PlayerPage from './pages/PlayerPage'
 import TeamPage from './pages/TeamPage'
 import Home from './pages/Home'
+import PlayerInfoPage from './pages/PlayerInfoPage'
 import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/playerpage" element={<PlayerPage />} />
           <Route path="/teams" element={<TeamPage />} />
           <Route path="/view/:teamId" element={<TeamPage />} />
+          <Route path="/details/:playerId" element={<PlayerInfoPage />} />
         </Routes>
       </main>
     </div>

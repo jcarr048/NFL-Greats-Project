@@ -18,7 +18,7 @@ const PlayerPage = () => {
       <div className="players">
         <section className="container-grid">
           {players?.map((result) => (
-            <Link to={`/playerpage/${result.id}`} key={result.id}>
+            <Link to={`/details/${result._id}`} key={result._id}>
               <PlayerInfo
                 image={result.image}
                 name={result.name}
