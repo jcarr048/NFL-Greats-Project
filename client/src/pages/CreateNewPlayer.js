@@ -26,14 +26,14 @@ function CreateNewPlayer() {
   return (
     <div className="new-player">
       <form onSubmit={handleSubmit}>
-        <label for="image">Image:</label>
+        <label htmlFor="image">Image:</label>
         <input
           id="image"
           type="link"
           onChange={handleChange}
           value={formState.image}
         />
-        <label for="name">Player Name:</label>
+        <label htmlFor="name">Player Name:</label>
         <input
           id="name"
           type="text"
@@ -41,7 +41,7 @@ function CreateNewPlayer() {
           value={formState.name}
           required
         />
-        <label for="position">Player Position:</label>
+        <label htmlFor="position">Player Position:</label>
         <input
           id="position"
           type="text"
@@ -49,7 +49,7 @@ function CreateNewPlayer() {
           value={formState.position}
           required
         />
-        <label for="yearsPlayed">Years played (example: 2010-2020):</label>
+        <label htmlfor="yearsPlayed">Years played (example: 2010-2020):</label>
         <input
           id="yearsPlayed"
           type="text"
@@ -57,7 +57,7 @@ function CreateNewPlayer() {
           value={formState.yearsPlayed}
           required
         />
-        <label for="college">College Attended:</label>
+        <label htmlFor="college">College Attended:</label>
         <input
           id="college"
           type="text"
@@ -65,7 +65,7 @@ function CreateNewPlayer() {
           value={formState.college}
           required
         />
-        <label for="proBowls">Pro Bowls:</label>
+        <label htmlFor="proBowls">Pro Bowls:</label>
         <input
           id="proBowls"
           type="text"
@@ -73,7 +73,7 @@ function CreateNewPlayer() {
           value={formState.proBowls}
           required
         />
-        <label for="superBowls">SuperBowls (if none, place 0):</label>
+        <label htmlFor="superBowls">SuperBowls (if none, place 0):</label>
         <input
           id="superBowls"
           type="text"
@@ -81,7 +81,7 @@ function CreateNewPlayer() {
           value={formState.superBowls}
           required
         />
-        <label for="mVP">
+        <label htmlFor="mVP">
           Most Valuable Player awards won (if none, place 0):
         </label>
         <input

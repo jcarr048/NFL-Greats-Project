@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 
 const PlayerInfoPage = () => {
   const [playerDetails, setPlayerDetails] = useState(null)
-
+  const navigate = useNavigate()
   let { playerId } = useParams()
   const getPlayerDetails = async () => {
     const response = await axios.get(
@@ -15,6 +15,10 @@ const PlayerInfoPage = () => {
   useEffect(() => {
     getPlayerDetails()
   }, [playerId])
+
+  const pageChange = () => {
+    navigate('/createplayer')
+  }
 
   return (
     <div className="player-content">
@@ -34,6 +38,8 @@ const PlayerInfoPage = () => {
           <p>Superbowls: {playerDetails?.superBowls}</p>
           <p>MVPs: {playerDetails?.mVP}</p>
         </div>
+        <button onClick={pageChange}>Create New Player</button>
+        <Link to="/createplayer">Create New Player</Link>
       </section>
     </div>
   )

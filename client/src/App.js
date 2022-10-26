@@ -4,6 +4,7 @@ import About from './pages/About'
 import PlayerPage from './pages/PlayerPage'
 import TeamPage from './pages/TeamPage'
 import Home from './pages/Home'
+import CreateNewPlayer from './pages/CreateNewPlayer'
 import PlayerInfoPage from './pages/PlayerInfoPage'
 import { Routes, Route } from 'react-router-dom'
 
