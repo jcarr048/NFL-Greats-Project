@@ -4,7 +4,7 @@ const router = Router()
 
 // router.get('/', (req, res) => res.send('This works!'))
 
-router.post('/players', controllers.createPlayer)
+router.post('/players/new', controllers.createPlayer)
 
 router.get('/players', controllers.getAllPlayers)
 
