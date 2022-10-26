@@ -8,7 +8,6 @@ const Home = () => {
   const getTeams = async () => {
     const response = await axios.get(`http://localhost:3001/api/teams`)
     setTeams(response.data.teams)
-    console.log(response.data.teams)
   }
   useEffect(() => {
     getTeams()

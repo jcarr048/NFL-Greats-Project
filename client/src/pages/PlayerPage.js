@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import PlayerInfo from '../components/PlayerInfo'
 
-const ViewPlayers = () => {
+const PlayerPage = () => {
   const [players, setPlayers] = useState([])
   const getPlayers = async () => {
-    const response = await axios.get(`http:localhost:3001/api/players`)
-    setPlayers(response.data.results)
+    const response = await axios.get(`http://localhost:3001/api/players`)
+    setPlayers(response.data.players)
+    console.log(response.data.players)
   }
   useEffect(() => {
     getPlayers()
@@ -16,12 +17,12 @@ const ViewPlayers = () => {
     <div>
       <div className="players">
         <section className="container-grid">
-          {players.map((result) => (
+          {players?.map((result) => (
             <Link to={`/playerpage/${result.id}`} key={result.id}>
               <PlayerInfo
                 image={result.image}
                 name={result.name}
-                team={result.team}
+                team_id={result.team_id}
               />
             </Link>
           ))}
@@ -31,4 +32,4 @@ const ViewPlayers = () => {
   )
 }
 
-export default ViewPlayers
+export default PlayerPage
