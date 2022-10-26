@@ -7,21 +7,25 @@ const Home = () => {
   const [teams, setTeams] = useState([])
   const getTeams = async () => {
     const response = await axios.get(`http://localhost:3001/api/teams`)
-    setTeams(response.data.results)
-    console.log(response.data)
+    setTeams(response.data.teams)
+    console.log(response.data.teams)
   }
   useEffect(() => {
     getTeams()
   }, [])
   return (
     <div>
+      <img
+        src="https://s7d2.scene7.com/is/image/TWCNews/7-1-20_nfl_logo_jpg"
+        alt="nfl"
+      ></img>
       <div className="teams">
         <h2>Teams</h2>
         <section className="container-grid">
-          {teams.map((result) => (
+          {teams?.map((result) => (
             <Link to={`/view/${result.id}`} key={result.id}>
               <TeamInfo
-                image={result.image}
+                logo={result.logo}
                 name={result.name}
                 division={result.division}
               />

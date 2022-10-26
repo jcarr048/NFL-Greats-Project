@@ -3,15 +3,16 @@ body {
   padding: 0;
   color: red;
   background-color: navy;
+  text-align: center;
 }
 
 .container-grid {
   padding: 2em 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
-  grid-gap: 1em;
+  grid-gap: 10em;
   justify-content: center;
-}
+} 
 
 header {
   background-color: rgba(254, 121, 104);
