@@ -14,6 +14,19 @@ The point of this app is to give the user information about all 32 NFL teams and
 
 ## Technologies Used
 
+-JavaScript
+-React
+-MONGO DB
+-Heroku
+-Insomnia
+
 ## Screenshots
+
+## Future Updates
+
+1. All 32 NFL Teams featured
+2. Voting system
+3. Comment Board
+4. Forum
 
 ## Credits

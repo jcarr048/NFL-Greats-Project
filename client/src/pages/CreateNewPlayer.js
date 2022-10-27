@@ -15,7 +15,8 @@ function CreateNewPlayer() {
   }
   const [formState, setFormState] = useState(initialState)
 
-  const handleSubmit = () => {
+  const handleSubmit = (evt) => {
+    evt.preventDefault()
     axios.post('http://localhost:3001/api/players/new', formState)
     setFormState(initialState)
   }
@@ -34,6 +35,14 @@ function CreateNewPlayer() {
           onChange={handleChange}
           value={formState.image}
         />
+        <label htmlFor="team_id">Team:</label>
+        <input
+          id="team_id"
+          type="text"
+          onChange={handleChange}
+          value={formState.name}
+          required
+        />
         <label htmlFor="name">Player Name:</label>
         <input
           id="name"
@@ -50,7 +59,7 @@ function CreateNewPlayer() {
           value={formState.position}
           required
         />
-        <label htmlfor="yearsPlayed">Years played (example: 2010-2020):</label>
+        <label htmlFor="yearsPlayed">Years played (example: 2010-2020):</label>
         <input
           id="yearsPlayed"
           type="text"

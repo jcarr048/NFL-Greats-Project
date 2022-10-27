@@ -48,7 +48,7 @@ function UpdatePlayer() {
           onChange={handleChange}
           value={formState.position}
         />
-        <label htmlfor="yearsPlayed">Years played (example: 2010-2020):</label>
+        <label htmlFor="yearsPlayed">Years played (example: 2010-2020):</label>
         <input
           id="yearsPlayed"
           type="text"
@@ -87,7 +87,7 @@ function UpdatePlayer() {
         />
         <button type="submit">Update Player</button>
       </form>
-      <Link to="/playerpage">Click here to check out your player!</Link>
+      <Link to="/playerpage">Click here to check out the updated player!</Link>
     </div>
   )
 }

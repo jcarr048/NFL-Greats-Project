@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const TeamPage = () => {
   const [teamDetails, setTeamDetails] = useState(null)
@@ -31,6 +32,7 @@ const TeamPage = () => {
           <p>Super Bowls Won: {teamDetails?.superBowls}</p>
           <p>Team's Best Player: {teamDetails?.bestPlayer}</p>
         </div>
+        <Link to="/playerpage">Click here to view the players</Link>
       </section>
     </div>
   )

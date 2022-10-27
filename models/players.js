@@ -10,8 +10,7 @@ const Player = new Schema(
     college: { type: String, required: true },
     proBowls: { type: Number, required: true },
     superBowls: { type: Number, required: true },
-    mVP: { type: Number, required: true },
-    proFootballRef: { type: String, required: true }
+    mVP: { type: Number, required: true }
   },
   { timestamps: true }
 )

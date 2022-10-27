@@ -24,10 +24,10 @@ const PlayerInfoPage = () => {
     navigate('/updateplayer')
   }
 
-  const deleteThisPlayer = async () => {
-    const response = await axios.delete(
-      `http://localhost:3001/api/delete/players/${playerId}`
-    )
+  const deleteThisPlayer = async (playerId) => {
+    try {
+      await axios.delete(`http://localhost:3001/api/delete/players/${playerId}`)
+    } catch (error) {}
   }
 
   return (
