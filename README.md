@@ -6,7 +6,7 @@
 
 ## **_Description_**
 
-[Trello Board]()
+[Trello Board](https://trello.com/b/86lnpxtT/project-2-nfl-greats)
 
 [Heroku Link]()
 
@@ -22,6 +22,10 @@ The point of this app is to give the user information about all 32 NFL teams and
 
 ## Screenshots
 
+![main](https://imgur.com/LCDegoH)
+![playerpage](https://imgur.com/zXV6Kpk)
+![playerdetails](https://imgur.com/EsqIfUn)
+
 ## Future Updates
 
 1. All 32 NFL Teams featured
@@ -30,3 +34,7 @@ The point of this app is to give the user information about all 32 NFL teams and
 4. Forum
 
 ## Credits
+
+All statistics and player pictures came from (https://pro-football-reference.com)
+
+[Main page photo](https://s7d2.scene7.com/is/image/TWCNews/7-1-20_nfl_logo_jpg)
