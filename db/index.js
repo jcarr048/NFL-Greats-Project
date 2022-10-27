@@ -1,7 +1,12 @@
 const mongoose = require('mongoose')
 
+let MONGODB_URI =
+  process.env.NODE_ENV === 'production'
+    ? process.env.MONGODB_URI
+    : 'mongodb://127.0.0.1:27017/nflDatabase'
+
 mongoose
-  .connect('mongodb://127.0.0.1:27017/nflDatabase')
+  .connect(MONGODB_URI)
   .then(() => {
     console.log('Successfully connected to MongoDB.')
   })
