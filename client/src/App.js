@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import CreateNewPlayer from './pages/CreateNewPlayer'
 import PlayerInfoPage from './pages/PlayerInfoPage'
 import { Routes, Route } from 'react-router-dom'
+import UpdatePlayer from './pages/UpdatePlayer'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/view/:teamId" element={<TeamPage />} />
           <Route path="/details/:playerId" element={<PlayerInfoPage />} />
           <Route path="/createplayer" element={<CreateNewPlayer />} />
+          <Route path="/updateplayer" element={<UpdatePlayer />} />
         </Routes>
       </main>
     </div>
