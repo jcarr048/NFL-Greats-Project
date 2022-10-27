@@ -20,6 +20,10 @@ const PlayerInfoPage = () => {
     navigate('/createplayer')
   }
 
+  const updateThisPlayer = () => {
+    navigate('/updateplayer')
+  }
+
   const deleteThisPlayer = async () => {
     const response = await axios.delete(
       `http://localhost:3001/api/delete/players/${playerId}`
@@ -46,7 +50,8 @@ const PlayerInfoPage = () => {
           <p>MVPs: {playerDetails?.mVP}</p>
         </div>
         <button onClick={pageChange}>Create New Player</button>
-        <button onClick={deleteThisPlayer}>Delete this player</button>
+        <button onClick={deleteThisPlayer}>Delete this Player</button>
+        <button onClick={updateThisPlayer}>Update this Player</button>
         <h3>
           Disagree with this player? Have someone else in mind? Click the
           buttons above to delete the player, then create a new one.

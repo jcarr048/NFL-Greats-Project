@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   color: red;
-  background-color: navy;
+  text-shadow: 4em, black;
+  background-color: white;
   text-align: center;
 }
 
@@ -22,8 +23,8 @@ header {
   align-items: center;
   justify-content: center;
   height: 3em;
-  margin: 10px;
   font-weight: 200;
+  margin: 3px;
   font: Georgia;
 }
 

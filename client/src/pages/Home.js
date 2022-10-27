@@ -19,7 +19,7 @@ const Home = () => {
         alt="nfl"
       ></img>
       <div className="teams">
-        <h2>Teams</h2>
+        <h2>NFC South Teams</h2>
         <section className="container-grid">
           {teams?.map((result) => (
             <Link to={`/view/${result._id}`} key={result._id}>
