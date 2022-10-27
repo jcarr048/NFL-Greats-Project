@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/view/:teamId" element={<TeamPage />} />
           <Route path="/details/:playerId" element={<PlayerInfoPage />} />
           <Route path="/createplayer" element={<CreateNewPlayer />} />
-          <Route path="/updateplayer" element={<UpdatePlayer />} />
+          <Route path="/updateplayer/:playerId" element={<UpdatePlayer />} />
         </Routes>
       </main>
     </div>

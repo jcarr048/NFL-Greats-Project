@@ -12,7 +12,7 @@ router.get('/teams', controllers.getAllTeams)
 
 router.get('/teams/:id', controllers.getTeamById)
 
-router.put('/players/update', controllers.updatePlayer)
+router.put('/update/players/:id', controllers.updatePlayer)
 
 router.put('/teams/update', controllers.updateTeam)
 

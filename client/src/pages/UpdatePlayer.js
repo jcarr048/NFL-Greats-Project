@@ -1,10 +1,11 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 function UpdatePlayer() {
   const initialState = {
     image: '',
+    team_id: '',
     name: '',
     position: '',
     yearsPlayed: '',
@@ -14,10 +15,12 @@ function UpdatePlayer() {
     mVP: ''
   }
   const [formState, setFormState] = useState(initialState)
-
-  const handleSubmit = () => {
-    axios.post('http://localhost:3001/api/players/update', formState)
+  let { playerId } = useParams()
+  const handleSubmit = (evt) => {
+    evt.preventDefault()
+    axios.put(`http://localhost:3001/api/update/players/${playerId}`, formState)
     setFormState(initialState)
+    console.log(formState)
   }
 
   const handleChange = (evt) => {
@@ -33,6 +36,13 @@ function UpdatePlayer() {
           type="link"
           onChange={handleChange}
           value={formState.image}
+        />
+        <label htmlFor="team_id">Team:</label>
+        <input
+          id="team_id"
+          type="text"
+          onChange={handleChange}
+          value={formState.team_id}
         />
         <label htmlFor="name">Player Name:</label>
         <input

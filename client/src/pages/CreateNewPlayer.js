@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 function CreateNewPlayer() {
   const initialState = {
     image: '',
+    team: '',
     name: '',
     position: '',
     yearsPlayed: '',
@@ -40,8 +41,7 @@ function CreateNewPlayer() {
           id="team_id"
           type="text"
           onChange={handleChange}
-          value={formState.name}
-          required
+          value={formState.team_id}
         />
         <label htmlFor="name">Player Name:</label>
         <input
