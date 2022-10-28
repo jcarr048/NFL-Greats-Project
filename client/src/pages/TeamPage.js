@@ -30,7 +30,7 @@ const TeamPage = () => {
           <h3>Name: {teamDetails?.name}</h3>
           <p>Year Founded: {teamDetails?.yearFounded}</p>
           <p>Super Bowls Won: {teamDetails?.superBowls}</p>
-          <p>Team's Best Player: {teamDetails?.bestPlayer}</p>
+          <p>Team's Best Player:{teamDetails?.bestPlayer}</p>
         </div>
         <Link to="/playerpage">Click here to view the players</Link>
       </section>

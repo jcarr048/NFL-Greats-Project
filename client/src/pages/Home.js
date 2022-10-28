@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <div>
       <img
+        className="nfllogo"
         src="https://s7d2.scene7.com/is/image/TWCNews/7-1-20_nfl_logo_jpg"
         alt="nfl"
       ></img>
