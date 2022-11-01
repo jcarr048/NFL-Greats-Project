@@ -8,6 +8,8 @@
 
 [Trello Board](https://trello.com/b/86lnpxtT/project-2-nfl-greats)
 
+[Git Hub](https://github.com/jcarr048/NFL-Greats-Project)
+
 [Heroku Link](https://nflgreatscarroll.herokuapp.com/)
 
 The point of this app is to give the user information about all 32 NFL teams and what player has been the best ever for that franchise. Most hardcore NFL fans will find most of this information old news, however, the target audience is people interested in, or just getting started with interest in the NFL. If a user does disagree with one of the players, they have the option to delete the player or change the player altogether.
