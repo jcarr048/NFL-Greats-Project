@@ -18,7 +18,7 @@ function CreateNewPlayer() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault()
-    axios.post('http://localhost:3001/api/players/new', formState)
+    axios.post('/api/players/new', formState)
     setFormState(initialState)
   }
 
