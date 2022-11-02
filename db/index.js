@@ -1,9 +1,10 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 let MONGODB_URI =
   process.env.NODE_ENV === 'production'
     ? process.env.MONGODB_URI
-    : 'mongodb+srv://j3ppy:1234@nfldatabase.6efkrgd.mongodb.net/?retryWrites=true&w=majority'
+    : 'mongodb://127.0.0.1:27017/nflDatabase'
 
 mongoose
   .connect(MONGODB_URI)

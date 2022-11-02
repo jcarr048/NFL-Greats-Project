@@ -24,9 +24,9 @@ The point of this app is to give the user information about all 32 NFL teams and
 
 ## Screenshots
 
-![main](https://imgur.com/LCDegoH)
-![playerpage](https://imgur.com/zXV6Kpk)
-![playerdetails](https://imgur.com/EsqIfUn)
+![home](./images/Home.png)
+![playerpage](./images/Playerpage.png)
+![playerdetails](./images/PlayerDetails.png)
 
 ## Future Updates
 
