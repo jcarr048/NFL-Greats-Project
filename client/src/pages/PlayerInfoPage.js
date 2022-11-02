@@ -7,9 +7,7 @@ const PlayerInfoPage = () => {
   const navigate = useNavigate()
   let { playerId } = useParams()
   const getPlayerDetails = async () => {
-    const response = await axios.get(
-      `http://localhost:3001/api/players/${playerId}`
-    )
+    const response = await axios.get(`/api/players/${playerId}`)
     setPlayerDetails(response.data.player)
   }
   useEffect(() => {
@@ -26,7 +24,7 @@ const PlayerInfoPage = () => {
 
   const deleteThisPlayer = async () => {
     try {
-      await axios.delete(`http://localhost:3001/api/delete/players/${playerId}`)
+      await axios.delete(`/api/delete/players/${playerId}`)
     } catch (error) {
       console.log(error)
     }

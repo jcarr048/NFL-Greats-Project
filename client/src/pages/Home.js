@@ -6,7 +6,7 @@ import TeamInfo from '../components/TeamInfo'
 const Home = () => {
   const [teams, setTeams] = useState([])
   const getTeams = async () => {
-    const response = await axios.get(`http://localhost:3001/api/teams`)
+    const response = await axios.get(`/api/teams`)
     setTeams(response.data.teams)
   }
   useEffect(() => {

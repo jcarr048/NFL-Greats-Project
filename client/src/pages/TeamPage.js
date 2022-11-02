@@ -8,9 +8,7 @@ const TeamPage = () => {
 
   let { teamId } = useParams()
   const getTeamDetails = async () => {
-    const response = await axios.get(
-      `http://localhost:3001/api/teams/${teamId}`
-    )
+    const response = await axios.get(`/api/teams/${teamId}`)
     setTeamDetails(response.data.team)
   }
   useEffect(() => {

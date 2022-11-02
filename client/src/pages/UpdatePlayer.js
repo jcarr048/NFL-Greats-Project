@@ -18,7 +18,7 @@ function UpdatePlayer() {
   let { playerId } = useParams()
   const handleSubmit = (evt) => {
     evt.preventDefault()
-    axios.put(`http://localhost:3001/api/update/players/${playerId}`, formState)
+    axios.put(`/api/update/players/${playerId}`, formState)
     setFormState(initialState)
     console.log(formState)
   }
