@@ -18,4 +18,6 @@ router.put('/teams/update', controllers.updateTeam)
 
 router.delete('/delete/players/:id', controllers.deletePlayer)
 
+router.delete('/delete/teams/:id', controllers.deleteTeam)
+
 module.exports = router

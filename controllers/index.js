@@ -92,6 +92,19 @@ const deletePlayer = async (req, res) => {
   }
 }
 
+const deleteTeam = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Team.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('Team Deleted')
+    }
+    throw new Error('Team not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   createPlayer,
   getAllPlayers,
@@ -100,5 +113,6 @@ module.exports = {
   getTeamById,
   updatePlayer,
   updateTeam,
-  deletePlayer
+  deletePlayer,
+  deleteTeam
 }

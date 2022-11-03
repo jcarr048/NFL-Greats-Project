@@ -15,6 +15,14 @@ const TeamPage = () => {
     getTeamDetails()
   }, [teamId])
 
+  const deleteThisTeam = async () => {
+    try {
+      await axios.delete(`/api/delete/teams/${teamId}`)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <div className="team-content">
       <section className="image-container">
@@ -32,6 +40,7 @@ const TeamPage = () => {
         </div>
         <Link to="/playerpage">Click here to view the players</Link>
       </section>
+      <button onClick={deleteThisTeam}> Delete Team </button>
     </div>
   )
 }
