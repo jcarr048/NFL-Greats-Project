@@ -1,10 +1,29 @@
 body {
   margin: 0;
-  padding: 0;
-  color: red;
-  text-shadow: 4em, black;
-  background-color: white;
-  text-align: center;
+  background-image: url("https://s7d2.scene7.com/is/image/TWCNews/7-1-20_nfl_logo_jpg");
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: 'Racing Sans One'
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  opacity: .8;
+}
+
+.img-wrapper:hover{
+  opacity:1;
+  cursor: pointer;
 }
 
 .container-grid {
@@ -17,8 +36,31 @@ body {
   border-color: black;
 } 
 
-.nfllogo {
-  border-radius: 80%;
+.details-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details, .info-wrapper {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 8px;
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
 }
 
 header {
@@ -64,6 +106,10 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card:hover {
